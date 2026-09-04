@@ -3,8 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # غيّر username و password بـ الـ credentials تبعك
-DATABASE_URL = "mysql+mysqlconnector://root:121538@localhost:3306/task_management"
-
+DATABASE_URL = "postgresql://admin:PASSWORD@dpg-dadk3cn40uj673bq8uv0-a:5432/task_management_joq5"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
